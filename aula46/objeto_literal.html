@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let pessoa = {
+            idade: 20,
+            nome: 'Fulano',
+            sobrenome: 'de Tal',
+            sexo: 'masculino',
+            estado_civil: 'casado',
+            filmes_preferidos: ["Star Wars", "Os Vingadores", "Velozes e Furiosos"],
+        }
+
+        console.log(pessoa)
+
+        pessoa.idade = 35
+
+        console.log(pessoa)
+
+        pessoa.cumprimento = function() {
+            return ('Olá, ' + this.nome + ' ' + this.sobrenome)
+        }
+
+        console.log(pessoa)
+
+        console.log(pessoa.cumprimento())
+    
+        pessoa.comer = function(comida) {
+            return ('Estou comendo: ' + comida)
+        }
+
+        console.log(pessoa.comer('macarrão'))
+    
+    </script>
+
+</body>
+</html>
