@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+// 1. Gerar um objeto JSON que contenha apenas uma propriedade que seja uma string.
+// Em seguida, transformá-lo em string.
+
+    let objeto = JSON.parse('{"nome": "Marcelo"}')
+
+    console.log(objeto)
+
+    let objetoJSON = JSON.stringify(objeto)
+
+    console.log(objetoJSON)
+
+
+
+// 2. Gerar um objeto JSON amigos que contenha um número com a quantidade de amigos e um
+// array com as strings dos nomes deles. Em seguida, transformá-lo em string.
+
+    let amigos = '{"quantidade": 5, "nomes": ["Carlos", "Henrique", "Miguel", "Manuel", "Francisco"]}'
+
+    let amigosObj = JSON.parse(amigos)
+    console.log(amigosObj)
+
+    let amigosJSON = JSON.stringify(amigosObj)
+    console.log(amigosJSON)
+
+
+// 3. Gerar um objeto JSON contendo um array com 3 objetos. Cada objeto deve ter um número e
+// uma string. Em seguida, transformá-lo em string.
+// a. Quando tiver o objeto JSON, experimentar acessar cada uma das variáveis. -->
+
+    let produtos = '{"produtos": [{"camiseta": 1}, {"calca": 2}, {"sapato": 3}]}'
+
+    let produtosObj = JSON.parse(produtos)
+    let produtosJSON = JSON.stringify(produtosObj)
+
+    console.log(produtosObj)
+    console.log(produtosJSON)
+
+    console.log(produtosObj.produtos)
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- Lembrete da sintaxe de um objeto json:
+let​ objetoEmFormatoJSON ​=​ ​'​{​ ​"atributo"​:​ ​"valor"​,​ ​"atributo1"​:​ ​1​,​ ​"atributo2"​:​ ​[], "atributo3"​:​
+​null​,​ ​"atributo4"​:​ ​false​ ​}'​;
+Em seguida, contamos com as funções JSON.parse() e JSON.stringify()
+
+
+

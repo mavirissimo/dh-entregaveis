@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    .largura {
+        width: 600px;
+    }
+    </style>
+</head>
+<body>
+    
+    <form id="formulario" action="">
+        <label> Nome
+            <input class="largura" id="nome" type="text" name="nome" > <br><br>
+        </label>
+        
+        <label> E-mail
+            <input class="largura"id="email" type="email" name="email"><br><br>
+        </label>
+
+        <label> Senha
+            <input class="largura" id="senha" type="password" name="senha"><br><br>
+        </label>
+        
+        <label> Repita sua senha
+            <input class="largura" id="senha1" type="password" name="senha"><br><br>
+        </label>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKk3nWsU2cJT0dzCe2nepopELJ6NtnSj7QWW5fl2dt6TpZXjRv" width="40px" alt=""> <br><br>
+
+        <label> Sexo
+            <input type="radio" name="sexo" value="m"> Masculino   
+            <input type="radio" name="sexo" value="f"> Feminino <br><br>
+        </label>
+        <button type="submit">Enviar</button> <br><br>
+    </form>
+
+
+    <button class="limpar" type="button">Limpar</button> <br><br>
+    <button type="button">Mostrar dados</button> <br><br>
+
+    <ul></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+
+A. Todos os campos do formulário devem ser obrigatórios.
+B. Caso algum deles fique sem preencher, no momento do envio, o formulário deve mostrar
+um alerta: “O campo X é obrigatório”. É bom esclarecer que essa validação deve ser feita
+por JavaScript, não por meio do atributo required.
+
+
+C. Adicionar o campo senha duas vezes e, caso os valores não sejam iguais, exibir uma
+mensagem de erro.
+D. Adicionar um checkbox que permita que o usuário escolha se quer ou não receber
+notícias sobre o site.
+E. Criar dois botões: um para limpar todos os campos e outro que permita
+ocultar o formulário e mostrar um <ul> com cada dado
+inserido no form (nome e valor).
+F. Caso o usuário seja do sexo masculino, a página deve mostrar o fundo de uma cor e, caso
+seja do sexo feminino, de outra. Para não excluir ninguém, adicionar
+uma terceira opção (“outro”), que exiba outra cor -->
